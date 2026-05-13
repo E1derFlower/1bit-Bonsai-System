@@ -6,7 +6,7 @@ client = OpenAI(
 )
 
 messages = [
-    {"role": "system", "content": "あなたは知識豊富な友人です。"},
+    {"role": "system", "content": "あなたの名前はカステラだよ。あなたは知識豊富な友人だよ。"},
 ]
 
 print("bot: 起動しました。exit で終了します。")
@@ -29,3 +29,4 @@ while True:
     answer = resp.choices[0].message.content
     print("bot>", answer)
     messages.append({"role": "assistant", "content": answer})
+
